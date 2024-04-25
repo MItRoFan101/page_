@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="4;URL='/'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЗАЯВКА </title>
+ <link rel="stylesheet" type="text/css" href="/static/css/_load.css">
+ 
+</head>
+<body>
+    <body class="d-flex h-100 text-center text-bg-dark">
+   
+    
+      <div class="cover-container d-flex w-100 h-50 p-2 mx-auto flex-column" style="margin-top: 20px;">
+        <header class="mb-auto">
+          <div>
+            <h3 class="float-md-start mb-5  " style="margin-top: -10px" >IT LSK </h3>
+
+         
+            <div class="item">
+                <img src="/static/picha/load-loading.gif" class="gif">
+              </div>
+            
+            </nav>
+
+            <div class="loader-container">
+                <div class="loader" id="loader"></div>
+              </div>
+          </div>
+        </header>
+    
+     
+     
+     
+
+
+              
+          </form>
+      </div>
+
+
+       
+
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+
+
+
+  <style>
+
+.loader-container {
+  width: 100%;
+  height: 30px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center; /* Центрируем по вертикали */
+  margin-top: 10vh; /* Помещаем посередине страницы */
+  margin-right: 30rem;
+  border-radius: 10px; 
+}
+
+.loader {
+  height: 100%;
+  background-color: #4CAF50;
+  width: 0;
+  transition: width 1s ease-in-out;
+  border-radius: 10px; /* Добавляем округление краев */
+}s
+
+.gif{
+  
+    left: 15rem;
+    top: 50rem;
+  
+object-fit: cover;
+
+border-radius: 15px;
+
+}
+  </style>
+
+<script>
+
+// Симулируем загрузку
+function simulateLoading() {
+  let loader = document.getElementById('loader');
+  let width = 0;
+  let interval = setInterval(function() {
+    if (width >= 100) {
+      clearInterval(interval);
+    } else {
+      width++;
+      loader.style.width = width + '%';
+    }
+  }, 20);
+}
+
+// Вызываем функцию загрузки (можно вызвать ее в нужном месте вашего кода)
+simulateLoading();
+
+
+
+</script>
+
+
+
+
+    </body>
+
+
+      
+    
+</body>
+</html>

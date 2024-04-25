@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная станица </title>
+ <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
+<!--     <link rel="stylesheet" href="https://getbootstrap.com/docs/5.3/examples/cover/cover.css"> -->
+    <link rel="stylesheet" href="static/css/page_.css">
+</head>
+<style>
+  /* Стили для заголовка */
+  .tooltip {
+      position: relative;
+      display: inline-block;
+  }
+  .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -60px;
+      opacity: 0;
+      transition: opacity 0.3s;
+  }
+  .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+
+      
+
+      
+  }
+
+.row{
+
+  width: 800px;
+margin-left: -10rem;
+}
+
+
+
+</style>
+
+<body>
+
+
+    <body class="d-flex h-90 text-center text-bg-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+          <symbol id="check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+          </symbol>
+          <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+          </symbol>
+          <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+          </symbol>
+          <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+          </symbol>
+        </svg>
+    
+        
+    
+        
+    <div class="cover-container d-flex w-100 h-50 p-2 mx-auto flex-column" style="margin-top: 20px;">
+      <header class="mb-auto">
+        <div>
+
+
+          <h3 id="showMessageBox" class="float-md-start mb-5 it-lsk">IT LSK</h3>
+         
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+         
+            <a class="nav-link fw-bold py-2 px-3 "  href="">Главная</a>
+           
+            <a class="nav-link fw-bold py-2 px-3" href="/contacts/">Контакты</a>
+           
+           
+
+            <a class="nav-link fw-bold py-2 px-3 " href= "/info/" >Услуги</a>
+          
+          </nav>
+        </div>
+      </header>
+     
+        
+<div class="hi_div"><h2 class="mb-0">Добро пожаловать на сайт "IT-LSK"!</h2></div>
+        
+        <p class="lead">
+                    <a href="zayavka" class="btn btn-lg btn-light fw-bold border-white bg-white">ОФОРМИТЬ ЗАЯВКУ</a>
+        </p>
+
+<script>
+ // Ждем, пока весь DOM загрузится
+  document.addEventListener("DOMContentLoaded", function() {
+    // Получаем ссылку на кнопку
+    var button = document.querySelector(".btn");
+
+    // Функция для анимации выезда кнопки
+    function slideInButton() {
+      // Запоминаем начальное положение кнопки
+      var initialPosition = button.getBoundingClientRect().right;
+
+      // Устанавливаем начальное положение кнопки за пределами экрана справа
+      button.style.transform = "translateX(100%)";
+
+      // Задаем анимацию для перемещения кнопки из правого края экрана в середину
+      button.animate([
+        // Кадр начального положения (сдвигаем кнопку за пределы экрана)
+        { transform: "translateX(100%)" },
+        // Кадр окончательного положения (кнопка остается на своем месте)
+        { transform: "translateX(0)" }
+      ], {
+        duration: 1000, // Продолжительность анимации в миллисекундах
+        easing: "ease-out", // Тип анимации (замедленное замедление)
+        fill: "forwards" // Удерживаем последний кадр анимации
+      });
+    }
+
+    // Вызываем функцию для запуска анимации при загрузке страницы
+    slideInButton();
+  });
+  
+</script>
+
+      </main>
+    
+      <div id="block2" class="content">
+        <div class="col_1">
+            <h1 class="mb-0">Свяжитесь со мной уже сегодня!</h1>
+            <div class="mb-1 text-body-secondary">HELLO WORLD !!!!</div>
+            <p>Готов ответить на все ваши вопросы и обсудить ваши потребности и цели, чтобы разработать индивидуальные решения, нацеленные на успех вашего бизнеса.</p>
+        </div>
+    </div>
+<style>
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.content {
+  border: 1px solid #ccc; /* Граница */
+  border-radius: 10px; /* Скругление углов */
+  position: relative; /* Позиционирование */
+  animation: slideInFromLeft 1s forwards; /* Применение анимации */
+  margin-top: 0.5rem;
+}
+
+.col_1 {
+  padding: 20px; /* Отступы внутри блока */
+
+}
+
+</style>     
+
+      <footer class="mt-auto text-white-50">
+               
+     
+              <div class="col-md-6">
+                <div id="block2" class="row g-0  position-relative ">
+              
+                                    </div>
+                                    
+
+            
+                  <div class="slider">
+
+                    <!-- Первый слайд -->
+                    <div class="item">
+                      <img src="static/picha/512.png" class="rounded-image">
+                    </div>
+                  
+                    <!-- Второй слайд -->
+                    <div class="item">
+                      <img src="static/picha/service (1).png" class="rounded-image">
+                    </div>
+                  
+                    <!-- Третий слайд -->
+                    <div class="item">
+                      
+                      <img src="static/picha/server.gif"   class="gif">
+                    </div>
+                  
+                    <!-- Кнопки-стрелочки -->
+                    <a class="previous" onclick="previousSlide()">&#10094;</a>
+                    <a class="next" onclick="nextSlide()">&#10095;</a>
+                  </div>
+
+                  
+<script>/* Устанавливаем стартовый индекс слайда по умолчанию: */
+  let slideIndex = 0;
+    let slides = document.getElementsByClassName("item");
+
+    function showSlides() {
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+
+    function nextSlide() {
+        showSlides();
+    }
+
+    function previousSlide() {
+        slideIndex -= 2;
+        if (slideIndex < 0) {
+            slideIndex = slides.length - 1;
+        }
+        showSlides();
+    }
+
+    // Автоматическое перелистывание каждые 5 секунд
+    setInterval(function () {
+        showSlides();
+    }, 5000);
+
+    // Показываем первый слайд при загрузке страницы
+    showSlides();
+  </script>
+
+<div >
+  <p class="raz">Я <a href="https://vk.com/dmtriykiokuhin" class="text-white">разработчик</a>.</p>
+</div>
+              </div>
+          </div>
+          
+        
+      </div>
+   
+   </div>
+
+   
+      <script src="static/script.js"></script>
+          
+     
+
+        
+ 
+      </footer>
+    
+
+
+
+
+    
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    </body>
+
+    
+
+   
+
+</body>
+
+</html>
